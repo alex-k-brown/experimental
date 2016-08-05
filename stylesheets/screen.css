@@ -66,3 +66,251 @@ a img {
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
   display: block;
 }
+
+/*******Background Styles********/
+/* line 3, ../sass/_background.scss */
+.bg {
+  background: black;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+/* line 9, ../sass/_background.scss */
+.bg .bg-overlay {
+  top: 0;
+  position: absolute;
+}
+/* line 13, ../sass/_background.scss */
+.bg .bg-overlay-1 {
+  width: 100%;
+  height: 100%;
+  background: -webkit-radial-gradient(#363535, rgba(54, 53, 53, 0));
+  /* Safari 5.1 to 6.0 */
+  background: -o-radial-gradient(#363535, rgba(54, 53, 53, 0));
+  /* For Opera 11.6 to 12.0 */
+  background: -moz-radial-gradient(#363535, rgba(54, 53, 53, 0));
+  /* For Firefox 3.6 to 15 */
+  background: radial-gradient(#363535, rgba(54, 53, 53, 0));
+  /* Standard syntax */
+  animation: pulse 3s infinite;
+}
+/* line 22, ../sass/_background.scss */
+.bg .bg-overlay-2 {
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background: -webkit-radial-gradient(#3c3c3c 15%, rgba(60, 60, 60, 0) 50%);
+  /* Safari 5.1 to 6.0 */
+  background: -o-radial-gradient(#3c3c3c 15%, rgba(60, 60, 60, 0) 50%);
+  /* For Opera 11.6 to 12.0 */
+  background: -moz-radial-gradient(#3c3c3c 15%, rgba(60, 60, 60, 0) 50%);
+  /* For Firefox 3.6 to 15 */
+  background: radial-gradient(#3c3c3c 15%, rgba(60, 60, 60, 0) 50%);
+  /* Standard syntax */
+  animation: pulse 4s infinite;
+}
+/* line 32, ../sass/_background.scss */
+.bg .bg-overlay-3 {
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background: -webkit-radial-gradient(#414141 10%, rgba(65, 65, 65, 0) 25%);
+  /* Safari 5.1 to 6.0 */
+  background: -o-radial-gradient(#414141 10%, rgba(65, 65, 65, 0) 90%);
+  /* For Opera 11.6 to 12.0 */
+  background: -moz-radial-gradient(#414141 10%, rgba(65, 65, 65, 0) 25%);
+  /* For Firefox 3.6 to 15 */
+  background: radial-gradient(#414141 10%, rgba(65, 65, 65, 0) 25%);
+  /* Standard syntax */
+  animation: pulse 5s infinite;
+}
+
+/*****Animations*****/
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+}
+@keyframes sunPulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+}
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes mercury {
+  from {
+    transform: rotate(0deg) translateX(150px) rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg) translateX(150px) rotate(-360deg);
+  }
+}
+/***** Sun *****/
+/* line 3, ../sass/_sun.scss */
+.sun {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  position: absolute;
+  display: flex;
+  animation: spin 2s linear infinite;
+}
+/* line 11, ../sass/_sun.scss */
+.sun .sun-sphere {
+  width: 50px;
+  height: 50px;
+  margin: auto;
+  background: white;
+  border-radius: 100%;
+  display: flex;
+  background: -webkit-radial-gradient(white, rgba(255, 255, 255, 0));
+  /* Safari 5.1 to 6.0 */
+  background: -o-radial-gradient(white, rgba(255, 255, 255, 0));
+  /* For Opera 11.6 to 12.0 */
+  background: -moz-radial-gradient(white, rgba(255, 255, 255, 0));
+  /* For Firefox 3.6 to 15 */
+  background: radial-gradient(#ffffff, rgba(255, 255, 255, 0));
+  /* Standardtax */
+  animation: sunPulse 3s linear infinite;
+}
+/* line 24, ../sass/_sun.scss */
+.sun .sun-gradient-1 {
+  width: 100%;
+  height: 100%;
+  border-radius: 100%;
+  background: -webkit-linear-gradient(left, rgba(252, 241, 152, 0), #fcf198);
+  /*Safari 5.1-6*/
+  background: -o-linear-gradient(right, rgba(252, 241, 152, 0), #fcf198);
+  /*Opera 11.1-12*/
+  background: -moz-linear-gradient(right, rgba(252, 241, 152, 0), #fcf198);
+  /*Fx 3.6-15*/
+  background: linear-gradient(to right, rgba(252, 241, 152, 0), #fcf198);
+  /*Standard*/
+}
+/* line 33, ../sass/_sun.scss */
+.sun .sun-gradient-2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 100%;
+  background: -webkit-linear-gradient(left, #fcc598, rgba(252, 197, 152, 0));
+  /*Safari 5.1-6*/
+  background: -o-linear-gradient(right, #fcc598, rgba(252, 197, 152, 0));
+  /*Opera 11.1-12*/
+  background: -moz-linear-gradient(right, #fcc598, rgba(252, 197, 152, 0));
+  /*Fx 3.6-15*/
+  background: linear-gradient(to right, #fcc598, rgba(252, 197, 152, 0));
+  /*Standard*/
+}
+/* line 45, ../sass/_sun.scss */
+.sun .sun-gradient-3 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 100%;
+  background: -webkit-linear-gradient(#fce45e, rgba(252, 228, 94, 0));
+  /*Safari 5.1-6*/
+  background: -o-linear-gradient(#fce45e, rgba(252, 228, 94, 0));
+  /*Opera 11.1-12*/
+  background: -moz-linear-gradient(#fce45e, rgba(252, 228, 94, 0));
+  /*Fx 3.6-15*/
+  background: linear-gradient(#fce45e, rgba(252, 228, 94, 0));
+  /*Standard*/
+}
+
+/**** Mercury ****/
+/* line 3, ../sass/_mercury.scss */
+.mercury {
+  background: blue;
+  width: 25px;
+  height: 25px;
+  border-radius: 100%;
+  position: absolute;
+  left: 48%;
+  top: 48%;
+  background: -webkit-radial-gradient(#75abca, rgba(117, 171, 202, 0));
+  /* Safari 5.1 to 6.0 */
+  background: -o-radial-gradient(#75abca, rgba(117, 171, 202, 0));
+  /* For Opera 11.6 to 12.0 */
+  background: -moz-radial-gradient(#75abca, rgba(117, 171, 202, 0));
+  /* For Firefox 3.6 to 15 */
+  background: radial-gradient(#75abca, rgba(117, 171, 202, 0));
+  /* Standardtax */
+  -webkit-animation: mercury 4s linear infinite;
+  /* Chrome, Safari 5 */
+  -moz-animation: mercury 4s linear infinite;
+  /* Firefox 5-15 */
+  -o-animation: mercury 4s linear infinite;
+  /* Opera 12+ */
+  animation: mercury 4s linear infinite;
+  /* Chrome, Firefox 16+, 
+     IE 10+, Safari 5 */
+}
+/* line 16, ../sass/_mercury.scss */
+.mercury .mercury-gradient-1 {
+  width: 100%;
+  height: 100%;
+  border-radius: 100%;
+  background: -webkit-linear-gradient(left, rgba(246, 255, 188, 0), #f6ffbc);
+  /*Safari 5.1-6*/
+  background: -o-linear-gradient(right, rgba(246, 255, 188, 0), #f6ffbc);
+  /*Opera 11.1-12*/
+  background: -moz-linear-gradient(right, rgba(246, 255, 188, 0), #f6ffbc);
+  /*Fx 3.6-15*/
+  background: linear-gradient(to right, rgba(246, 255, 188, 0), #f6ffbc);
+  /*Standard*/
+  animation: spin 4s linear infinite;
+}
+/* line 28, ../sass/_mercury.scss */
+.mercury .mercury-gradient-2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 100%;
+  background: -webkit-linear-gradient(left, #bababa, rgba(186, 186, 186, 0));
+  /*Safari 5.1-6*/
+  background: -o-linear-gradient(right, #bababa, rgba(186, 186, 186, 0));
+  /*Opera 11.1-12*/
+  background: -moz-linear-gradient(right, #bababa, rgba(186, 186, 186, 0));
+  /*Fx 3.6-15*/
+  background: linear-gradient(to right, #bababa, rgba(186, 186, 186, 0));
+  /*Standard*/
+  animation: spin 4s linear infinite;
+}
+/* line 41, ../sass/_mercury.scss */
+.mercury .mercury-gradient-3 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 100%;
+  background: -webkit-linear-gradient(#11405b, rgba(17, 64, 91, 0));
+  /*Safari 5.1-6*/
+  background: -o-linear-gradient(#11405b, rgba(17, 64, 91, 0));
+  /*Opera 11.1-12*/
+  background: -moz-linear-gradient(#11405b, rgba(17, 64, 91, 0));
+  /*Fx 3.6-15*/
+  background: linear-gradient(#11405b, rgba(17, 64, 91, 0));
+  /*Standard*/
+  animation: spin 4s linear infinite;
+}

@@ -1,0 +1,62 @@
+/**** Mercury ****/
+
+.mercury {
+	background: blue;
+	width: 25px;
+	height: 25px;
+	border-radius: 100%;
+	position: absolute;
+    left: 48%;
+    top: 48%;
+    background: -webkit-radial-gradient(rgba(117, 171, 202, 1), rgba(117, 171, 202, 0)); /* Safari 5.1 to 6.0 */
+	background: -o-radial-gradient(rgba(117, 171, 202, 1), rgba(117, 171, 202, 0)); /* For Opera 11.6 to 12.0 */
+	background: -moz-radial-gradient(rgba(117, 171, 202, 1), rgba(117, 171, 202, 0)); /* For Firefox 3.6 to 15 */
+	background: radial-gradient(rgba(117, 171, 202, 1), rgba(117, 171, 202, 0)); /* Standardtax */
+	
+    .mercury-gradient-1 {
+		width: 100%;
+		height: 100%;
+		border-radius: 100%;
+		background: -webkit-linear-gradient(left,rgba(246,255,188,0),rgba(246,255,188,1)); /*Safari 5.1-6*/
+		background: -o-linear-gradient(right,rgba(246,255,188,0),rgba(246,255,188,1)); /*Opera 11.1-12*/
+		background: -moz-linear-gradient(right,rgba(246,255,188,0),rgba(246,255,188,1)); /*Fx 3.6-15*/
+		background: linear-gradient(to right, rgba(246,255,188,0), rgba(246,255,188,1)); /*Standard*/
+		animation: spin 4s linear infinite;
+
+	}
+
+	.mercury-gradient-2 {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		border-radius: 100%;
+		background: -webkit-linear-gradient(left,rgba(186,186,186,1),rgba(186,186,186,0)); /*Safari 5.1-6*/
+		background: -o-linear-gradient(right,rgba(186,186,186,1),rgba(186,186,186,0)); /*Opera 11.1-12*/
+		background: -moz-linear-gradient(right,rgba(186,186,186,1),rgba(186,186,186,0)); /*Fx 3.6-15*/
+		background: linear-gradient(to right, rgba(186,186,186,1), rgba(186,186,186,0)); /*Standard*/
+		animation: spin 4s linear infinite;
+	}
+	.mercury-gradient-3 {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		border-radius: 100%;
+		background: -webkit-linear-gradient(rgba(17,64,91,1),rgba(17,64,91,0)); /*Safari 5.1-6*/
+		background: -o-linear-gradient(rgba(17,64,91,1),rgba(17,64,91,0)); /*Opera 11.1-12*/
+		background: -moz-linear-gradient(rgba(17,64,91,1),rgba(17,64,91,0)); /*Fx 3.6-15*/
+		background: linear-gradient(rgba(17,64,91,1), rgba(17,64,91,0)); /*Standard*/
+		animation: spin 4s linear infinite;
+	}
+
+
+	-webkit-animation: mercury 4s linear infinite; /* Chrome, Safari 5 */
+       -moz-animation: mercury 4s linear infinite; /* Firefox 5-15 */
+         -o-animation: mercury 4s linear infinite; /* Opera 12+ */
+            animation: mercury 4s linear infinite; /* Chrome, Firefox 16+, 
+                                                      IE 10+, Safari 5 */
+
+}

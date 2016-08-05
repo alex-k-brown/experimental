@@ -1,0 +1,57 @@
+/***** Sun *****/
+
+.sun {
+	width: 100%;
+	height: 100%;
+	top: 0;
+	position: absolute;
+	display: flex;
+	animation: spin 2s linear infinite;
+
+	.sun-sphere {
+		width: 50px;
+		height: 50px;
+		margin: auto;
+		background: white;
+		border-radius: 100%;
+		display: flex;
+		background: -webkit-radial-gradient(rgba(255, 255, 255, 1), rgba(255, 255, 255, 0)); /* Safari 5.1 to 6.0 */
+		background: -o-radial-gradient(rgba(255, 255, 255, 1), rgba(255, 255, 255, 0)); /* For Opera 11.6 to 12.0 */
+		background: -moz-radial-gradient(rgba(255, 255, 255, 1), rgba(255, 255, 255, 0)); /* For Firefox 3.6 to 15 */
+		background: radial-gradient(rgba(255, 255, 255, 1), rgba(255, 255, 255, 0)); /* Standardtax */
+		animation: sunPulse 3s linear infinite;
+	}
+	.sun-gradient-1 {
+		width: 100%;
+		height: 100%;
+		border-radius: 100%;
+		background: -webkit-linear-gradient(left,rgba(252,241,152,0),rgba(252,241,152,1)); /*Safari 5.1-6*/
+		background: -o-linear-gradient(right,rgba(252,241,152,0),rgba(252,241,152,1)); /*Opera 11.1-12*/
+		background: -moz-linear-gradient(right,rgba(252,241,152,0),rgba(252,241,152,1)); /*Fx 3.6-15*/
+		background: linear-gradient(to right, rgba(252,241,152,0), rgba(252,241,152,1)); /*Standard*/
+	}
+	.sun-gradient-2 {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		border-radius: 100%;
+		background: -webkit-linear-gradient(left,rgba(252,197,152,1),rgba(252, 197,152,0)); /*Safari 5.1-6*/
+		background: -o-linear-gradient(right,rgba(252,197,152,1),rgba(252,197,152,0)); /*Opera 11.1-12*/
+		background: -moz-linear-gradient(right,rgba(252,197,152,1),rgba(252,197,152,0)); /*Fx 3.6-15*/
+		background: linear-gradient(to right, rgba(252,197,152,1), rgba(252,197,152,0)); /*Standard*/
+	}
+	.sun-gradient-3 {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		border-radius: 100%;
+		background: -webkit-linear-gradient(rgba(252,228,94,1),rgba(252, 228,94,0)); /*Safari 5.1-6*/
+		background: -o-linear-gradient(rgba(252,228, 94,1),rgba(252,228,94,0)); /*Opera 11.1-12*/
+		background: -moz-linear-gradient(rgba(252,228,94,1),rgba(252,228,94,0)); /*Fx 3.6-15*/
+		background: linear-gradient(rgba(252,228,94,1), rgba(252,228,94,0)); /*Standard*/
+	}
+}
